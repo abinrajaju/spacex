@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Familjen+Grotesk:wght@400;600;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #000;
+    color: #FFF;
+}
+ a{
+   text-decoration: none;
+    color: #FFF;
+    
+}
+ul{
+    list-style: none;
+    font-size: 20px;
+    
+} 
+/* header/nav bar */
+.mainheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    height: 100px;
+    padding: 50px 30px;
+
+}
+.logo img {
+    display: block;
+    width: 40%;
+    height: auto;
+}
+.desktop-main-menu ul {
+    display: flex;
+    
+
+    
+}
+.desktop-main-menu ul li{
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
+    
+}
+/* menu item border */
+.desktop-main-menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:2px;
+    background: #fff;
+    transform: scaleX(0);
+     
+
+
+}
+.desktop-main-menu ul li a:hover::after{
+    transform: scaleX(1) ;
+    
+    transition-duration: 0.3s;
+}
+section{
+    height: 100vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.section-inner{
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
+}
+.section-inner h4{
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.section-inner h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.section-a{
+    background-image: url('/New folder/f3.jpg');
+
+}
+.section-b{
+    background-image: url('/New folder/f4.jpg');
+    
+}
+.section-c{
+    background-image: url('/New folder/f2.jpg');
+    
+}
+.section-d{
+    background-image: url('/New folder/f1.png');
+    
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+    text-align: center;
+    min-width: 130px;
+    padding: 10 0;
+    margin-top: 10px;
+    border: 2px solid #fff;
+     
+    overflow: hidden;
+    z-index: 2;
+    
+    
+}
+
+.btn:hover span {
+    color: black;
+}
+.btn .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    z-index:-1;
+    transform: translateY(100%); 
+
+}
+.btn:hover .hover {
+    transform: translateY(0%);
+    transition-duration: 0.3s;
+
+}
+footer{
+    position: relative;
+    padding: 55 0;
+
+    
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer ul li {
+    margin-right: 30px;
+}
+footer ul li a {
+    font-size: 15px;
+    color: #FFF;
+    transition-duration: 0.3s;
+}
+footer ul li a:hover {
+    font-size: 20px;
+    color: #5c5656;
+
+
+}
